@@ -12,9 +12,9 @@ class Program
 		Console.WriteLine($"Bird Name\t:{birdName}");
 		Console.WriteLine($"Bird Age\t:{birdAge}");
 		
-		_bird.Sleep();
-		_bird.Eat();
-		_bird.MakeSound();
-		_bird.Fly();
+		// _bird.Sleep();
+		// _bird.Eat();
+		// _bird.MakeSound();
+		// _bird.Fly();
 	}
 }

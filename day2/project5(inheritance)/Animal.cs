@@ -5,6 +5,9 @@ class Animal
 	public string? name;
 	public int age;
 	
+	public Animal() {
+        Console.WriteLine("Parent Animal created");
+    }
 	public void  Sleep()
 	{
 		Console.WriteLine("Sleep");
@@ -21,6 +24,9 @@ class Animal
 
 class Bird:Animal
 {
+	public Bird() {
+        Console.WriteLine("Child Bird Created");
+    }
 	public void Fly()
 	{
 		Console.WriteLine("Bird Fly");
