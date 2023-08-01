@@ -7,6 +7,14 @@ This note is use for documentation bootcamp software engineer at formulatrix Ind
 
 
 **DAY 1 - 31/7/2023**
+> TO DO TASKS
+- [x] Installation VS Code and Extension need
+- [x] Learn basic git (clone, commit, push, pull)
+- [x] Learn Dev Standard and coding standard 
+- [x] Reference to learning c#  
+- [x] Learn basic of class diagram 
+
+---
 1. **Installation VS Code and Extension need** 
 2. **Learn basic git (clone, commit, push, pull)**
 3. **Learn Dev Standard and coding standard**
@@ -76,6 +84,54 @@ This note is use for documentation bootcamp software engineer at formulatrix Ind
     |**CAT**|The Class Name|
     |**isFemale**|The atributes|
     |**Scratch**|The behaviour or method|
+
+
+
+---
+**DAY 2 - 1/8/2023**
+> TO DO TASKS
+- [x] Continue class diagram
+- [x] Access Modifier
+- [x] Constructor 
+- [x] 4 Pilars OOP
+  - Encapsulation
+  - Abstraction
+  - Inheritance
+  - Polymorphism   
+---
+
+1. Continue class diagram
+   
+   in this case we continue learn about class diagram. we try to explain this to simple console application
+
+   Assume that we have a class `Cat` with atribute and method show belows
+
+   atribute :
+   ```csharp
+   public string? catName;
+   public string? catAge;
+   ```
+   method :
+   ```csharp
+   public void ScratchCat(){
+        Console.WriteLine("Cat Scratch");
+   }
+   ```
+
+   to access this code above, we have to declare the instance into properties like this
+   ```csharp
+   Cat _cat = new Cat();
+   //assign the cat name and age
+   _cat.catName = "miko";
+   _cat.catAge = 2;
+
+   //call method
+   _cat.ScratchCat();
+   ```
+
+
+
+
 
 
 
