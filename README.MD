@@ -130,9 +130,80 @@ This note is use for documentation bootcamp software engineer at formulatrix Ind
    ```
 
 
+1. Access Modifier
+   
+   In C#, access modifiers are keywords that determine the visibility and accessibility of types (classes, structs, enums, delegates) and their members (fields, properties, methods, constructors) within a program. They control which parts of the code can access and interact with specific elements. C# provides five main access modifiers:
 
+   - public
 
+        The most permissive access modifier. Members marked as public are accessible from any code within the same assembly or from other assemblies that reference the assembly where the public member is defined.
 
+   - private
+
+        The most restrictive access modifier. Members marked as private are only accessible within the same class or struct where they are defined. They are not accessible from any other code, including derived classes.
+    
+   - protected
+
+        Members marked as protected are accessible within the same class or struct where they are defined and from any derived classes. They are not accessible from unrelated code or classes outside the inheritance hierarchy.
+
+   - internal
+
+        Members marked as internal are accessible within the same assembly but not from outside the assembly. This means that any code in the same project or assembly can access internal members, but code from external assemblies cannot.
+
+   - protected internal
+
+        This access modifier combines the behaviors of both protected and internal. Members marked as protected internal are accessible within the same assembly and also from derived classes, even if they are in a different assembly.
+
+this show how access modifier works
+
+```csharp
+using System;
+
+namespace AccessModifiersExample
+{
+    // Public class accessible from any code
+    public class MyClass
+    {
+        // Public field accessible from any code
+        public int publicField;
+
+        // Private field accessible only within this class
+        private int privateField;
+
+        // Protected field accessible within this class and derived classes
+        protected int protectedField;
+
+        // Internal field accessible within the same assembly
+        internal int internalField;
+
+        // Protected internal field accessible within the same assembly and from derived classes
+        protected internal int protectedInternalField;
+
+        // Public method accessible from any code
+        public void PublicMethod()
+        {
+            // Can access all fields here (public, private, protected, internal, protected internal)
+            publicField = 1;
+            privateField = 2;
+            protectedField = 3;
+            internalField = 4;
+            protectedInternalField = 5;
+        }
+    }
+
+    // Derived class can access protected members of the base class
+    public class MyDerivedClass : MyClass
+    {
+        public void AccessProtectedField()
+        {
+            // Can access protectedField and protectedInternalField from the base class
+            protectedField = 10;
+            protectedInternalField = 20;
+        }
+    }
+}
+
+```
 
 
 
