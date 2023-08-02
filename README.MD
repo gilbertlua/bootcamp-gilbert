@@ -14,7 +14,7 @@ This note is use for documentation bootcamp software engineer at formulatrix Ind
 - [x] Reference to learning c#  
 - [x] Learn basic of class diagram 
 
----
+----
 1. **Installation VS Code and Extension need** 
 2. **Learn basic git (clone, commit, push, pull)**
 3. **Learn Dev Standard and coding standard**
