@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# BOTCAMP SOFTWARE ENGINEER FORMULATRIX
+## Gilbert Lua
+=======
 ## BOOTCAMP SOFTWARE ENGINEER FORMULATRIX
 This note is use for documentation bootcamp software engineer at formulatrix Indonesia.
 
@@ -210,3 +214,4 @@ namespace AccessModifiersExample
 
 
  
+>>>>>>> fa09f1babdf9ce33fd81d4766d404fb26181bffb
