@@ -5,7 +5,7 @@ class Students
 	public string? studentName;
 	public string? studentNum;
 	public string? studentGender;
-	private string? dateStudent;
+	private string? _dateStudent;
 	private int _studentTotal=0;
 	
 	// constructor
@@ -20,17 +20,17 @@ class Students
 	
 	public void SetStudentDate(string? date)
 	{
-		this.dateStudent = date;
+		this._dateStudent = date;
 	}
 	public string GetStudentDate()
 	{
-		if(dateStudent is null)
+		if(_dateStudent is null)
 		{
 			return "";
 		}
 		else
 		{
-			return dateStudent;	
+			return _dateStudent;	
 		}
 		
 	}
