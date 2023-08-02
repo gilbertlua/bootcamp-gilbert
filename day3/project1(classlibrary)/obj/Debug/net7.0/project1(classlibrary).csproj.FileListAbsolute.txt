@@ -1,0 +1,12 @@
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\bin\Debug\net7.0\project1(classlibrary).deps.json
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\bin\Debug\net7.0\project1(classlibrary).dll
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\bin\Debug\net7.0\project1(classlibrary).pdb
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\project1(classlibrary).csproj.AssemblyReference.cache
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\project1(classlibrary).GeneratedMSBuildEditorConfig.editorconfig
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\project1(classlibrary).AssemblyInfoInputs.cache
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\project1(classlibrary).AssemblyInfo.cs
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\project1(classlibrary).csproj.CoreCompileInputs.cache
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\project1(classlibrary).dll
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\refint\project1(classlibrary).dll
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\project1(classlibrary).pdb
+D:\bootcamp\bootcamp-gilbert\day3\project1(classlibrary)\obj\Debug\net7.0\ref\project1(classlibrary).dll
