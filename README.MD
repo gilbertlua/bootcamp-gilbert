@@ -209,8 +209,177 @@ namespace AccessModifiersExample
 
 ```
 
+---
+## **DAY 3 - 2/8/2023**
+
+today we continue learn about 4 pilars in object oriented programing
+#### ACCESS MODIFIER ( Encaptulation )
+
+---
+
+- [x] Public
+- [x] Private
+- [x] Protected
+- [x] Internal
+
+---
+
+> bellow is information about encaptulation 
+
+|acces modifier|information|
+|-|-|
+|Public| Can access in all classes|
+|Private| Can access only class it self |
+|Protected| Can access in  child of class it self|
+|Internal|Can access only the assembly it self|
 
 
+---
+#### POLYMORPHISM
+Polymorphism is a key feature of OOP that lets developers use same name methods in different forms. This tutorial explains the basics of Polymorphism and how to implement polymorphism in C#. 
+
+---
 
 
- 
+1. #### Static or Compile Time Polymorphism 
+
+    Method overloading is an example of Static polymorphism. TOverloading is the concept in which method names are the same with different parameters. The method/function has the same name but different signatures in overloading. It is also known as Early binding. It is also known as Compile Time Polymorphism because the decision of which method is to be called is made at compile time.
+
+    ```csharp
+    public int Add(int a, int b, int c){
+        return a + b + c;
+    }
+    public int Add(int a, int b){
+        return a + b;
+    }
+    ```
+1. #### Static or Compile Time Polymorphism 
+
+    Dynamic/runtime polymorphism is also known as late binding. Here, the method name and the method signature (the number of parameters and parameter type must be the same and may have a different implementation). Method overriding is an example of dynamic polymorphism.
+
+    Method overriding can be done using inheritance. With method overriding, it is possible for the base class and derived class to have the same method name and the same something. The compiler would not be aware of the method available for overriding the functionality, so the compiler does not throw an error at compile time. The compiler will decide which way to call at runtime, and if no method is found, it throws an error.
+
+    ```csharp
+    public class Drawing
+    {
+        public virtual double Area()
+    {
+            return 0;
+    }
+    }
+
+    public class Circle : Drawing
+    {
+        public double Radius { get; set; }
+        public Circle()
+        {
+            Radius = 5;
+        }
+        public override double Area()
+        {
+            return (3.14) * Math.Pow(Radius, 2);
+        }
+    }
+
+    public class Square : Drawing
+    {
+        public double Length { get; set; }
+        public Square()
+        {
+            Length = 6;
+        }
+        public override double Area()
+        {
+            return Math.Pow(Length, 2);
+        }
+    }
+
+    public class Rectangle : Drawing
+    {
+        public double Height { get; set; }
+        public double Width { get; set; }
+        public Rectangle()
+        {
+            Height = 5.3;
+            Width = 3.4;
+        }
+        public override double Area()
+        {
+            return Height * Width;
+        }
+    }
+    ```
+
+    The compiler requires an Area() method, and it compiles successfully, but the right version of the Area() method is not being determined at compile time but determined at runtime. Finally, the overriding methods must have the same name and signature (number of parameters and type) as the virtual or abstract method defined in the base class method and that it is overriding in the derived class.
+
+
+---
+#### C# INHERITANCE
+
+In C#, inheritance allows us to create a new class from an existing class. It is a key feature of Object-Oriented Programming (OOP).
+
+The class from which a new class is created is known as the base class (parent or superclass). And, the new class is called derived class (child or subclass)
+
+The derived class inherits the fields and methods of the base class. This helps with the code reusability in C#.
+
+```csharp
+class Animal {  
+  // fields and methods
+} 
+
+// Dog inherits from Animal
+class Dog : Animal {
+  // fields and methods of Animal 
+  // fields and methods of Dog 
+}
+```
+Here, we are inheriting the derived class Dog from the base class Animal. The Dog class can now access the fields and methods of Animal class.
+
+![Alt text](image.png)
+
+**Example: C# Inheritance**
+
+```csharp
+using System;
+
+namespace Inheritance {
+
+  // base class
+  class Animal { 
+
+    public string name;
+
+    public void display() {
+      Console.WriteLine("I am an animal");
+    }
+    
+  } 
+  
+  // derived class of Animal 
+  class Dog : Animal {
+    
+    public void getName() {
+      Console.WriteLine("My name is " + name);
+    }
+  }
+
+  class Program {
+
+    static void Main(string[] args) {
+
+      // object of derived class
+      Dog labrador = new Dog();
+
+      // access field and method of base class
+      labrador.name = "Rohu";
+      labrador.display();
+
+      // access method from own class
+      labrador.getName();
+
+      Console.ReadLine();
+    }
+
+  }
+}
+```
