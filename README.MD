@@ -1,7 +1,7 @@
 
 # BOTCAMP SOFTWARE ENGINEER FORMULATRIX
 ## Gilbert Lua
-=======
+---
 ## BOOTCAMP SOFTWARE ENGINEER FORMULATRIX
 This note is use for documentation bootcamp software engineer at formulatrix Indonesia.
 
