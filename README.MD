@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # BOTCAMP SOFTWARE ENGINEER FORMULATRIX
 ## Gilbert Lua
 =======
