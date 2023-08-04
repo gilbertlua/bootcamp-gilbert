@@ -1,0 +1,15 @@
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\project1.csproj.AssemblyReference.cache
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\project1.GeneratedMSBuildEditorConfig.editorconfig
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\project1.AssemblyInfoInputs.cache
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\project1.AssemblyInfo.cs
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\project1.csproj.CoreCompileInputs.cache
+D:\gilbert folder\day5\project1\bin\Debug\net7.0\project1.exe
+D:\gilbert folder\day5\project1\bin\Debug\net7.0\project1.deps.json
+D:\gilbert folder\day5\project1\bin\Debug\net7.0\project1.runtimeconfig.json
+D:\gilbert folder\day5\project1\bin\Debug\net7.0\project1.dll
+D:\gilbert folder\day5\project1\bin\Debug\net7.0\project1.pdb
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\project1.dll
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\refint\project1.dll
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\project1.pdb
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\project1.genruntimeconfig.cache
+D:\gilbert folder\day5\project1\obj\Debug\net7.0\ref\project1.dll
