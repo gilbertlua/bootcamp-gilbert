@@ -4,11 +4,6 @@ class Program
 {
 	public static void Main()
 	{	
-		// ShowInterface show = new ShowInterface();
-		// show.Print();
-		// show.Scan();
-		// show.Fax();
-		
 		ShowInterface print = new();
 		IFax newScan = print;
 		newScan.Fax();

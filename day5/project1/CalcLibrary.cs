@@ -17,4 +17,8 @@ public class Calculator
 	{
 		return x-y;
 	}
+	public static double MultiplyDouble(double x, double y)
+	{
+		return x*y;
+	} 
 }
