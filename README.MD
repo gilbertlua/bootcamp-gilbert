@@ -220,6 +220,195 @@ namespace AccessModifiersExample
     - abstract
     - interface
 
+### DAY 8 8/9/2023
+
+- [x] Delegate using generic
+
+    we can use delegate using generic that allows any of data type to process it
+
+    ```csharp
+    public delegate object MyDelegate<T>(T a, T b);
+    ```
+
+    to use this delegate can be used like this;
+    
+    ```csharp
+    MyDelegate<int> newDelegate = new(int a, int b);
+    ```
+    the generic is passing to interger
+
+- [x] Publisher using delegate
+    
+    In C#, a publisher typically refers to an object or class that raises events. An event is a mechanism that allows a class to provide notifications to other classes when certain actions or state changes occur. The class that raises (or publishes) the event is referred to as the publisher, and the classes that receive and handle these notifications are referred to as subscribers.
+
+    ```csharp
+        using System;
+        // Publisher class
+        class Button
+        {
+            // Define an event
+            public event EventHandler Click;
+
+            // Method that triggers the event
+            public void OnClick()
+            {
+                Click?.Invoke(this, EventArgs.Empty);
+            }
+        }
+
+        // Subscriber class
+        class Program
+        {
+            static void Main()
+            {
+                Button button = new Button();
+                
+                // Subscribe to the event
+                button.Click += Button_Click;
+                
+                // Simulate a button click
+                button.OnClick();
+            }
+
+            // Event handler method
+            static void Button_Click(object sender, EventArgs e)
+            {
+                Console.WriteLine("Button was clicked!");
+            }
+        }
+
+    ```
+
+- [x] Publisher using Event
+- [x] Exception
+
+    In C#, an exception is an object that represents an error or an unexpected condition that occurs during the execution of a program. When an exception occurs, the normal flow of the program is disrupted, and the runtime environment looks for code that can handle or catch the exception to prevent the program from crashing.
+
+    C# provides a structured exception handling mechanism using try, catch, finally, and optionally, throw blocks. Here's how it works:
+
+    ```cs
+    try
+    {
+        // Code that might cause an exception
+        if (someCondition)
+        {
+            throw new Exception("An error occurred.");
+        }
+    }
+    catch (Exception ex)
+    {
+        // Code to handle the exception
+        Console.WriteLine("Exception caught: " + ex.Message);
+    }
+
+    ```
+
+    > learn again about parse and try parse
+
+---
+
+### DAY 8 8/9/2023
+
+#### Operator Overloading
+
+- operator overloading
+
+    Operator overloading is a concept that exists in several programming languages, including C#. It allows you to define custom behaviors for operators when they are used with instances of your own classes. This can make your code more expressive and intuitive. In C#, you can overload a variety of operators, such as +, -, *, /, ==, !=, etc.
+
+    > interface is implement
+
+- enum
+
+
+    In C#, an enum, short for "enumeration," is a distinct value type that represents a set of named constant values. Enumerations are used to define a list of named integer constants, making your code more readable and understandable when dealing with specific sets of related values.
+
+    ```cs
+
+    enum DaysOfWeek {
+        Sunday,
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday
+    }
+
+    class Program {
+        static void Main(string[] args) {
+            DaysOfWeek today = DaysOfWeek.Wednesday;
+
+            if (today == DaysOfWeek.Wednesday) {
+                Console.WriteLine("It's Wednesday!");
+            }
+        }
+    }
+    ```
+- enumerator
+
+    an enumerator is an object that allows you to iterate over a collection of items, such as elements in an array or elements in a collection like a list. Enumerators provide a way to sequentially access and process each element of the collection one by one.
+
+    The concept of enumerators is closely related to the concept of iterators. An enumerator implements the IEnumerator interface, and it works in conjunction with the IEnumerable interface. The IEnumerable interface defines a method named GetEnumerator() that returns an enumerator (IEnumerator object), which is then used to iterate through the elements of the collection.
+
+    ```cs
+    using System;
+    using System.Collections;
+
+    class Program {
+        static void Main(string[] args) {
+            int[] numbers = { 1, 2, 3, 4, 5 };
+
+            IEnumerable enumerable = numbers; // Convert the array to an IEnumerable
+
+            IEnumerator enumerator = enumerable.GetEnumerator();
+
+            while (enumerator.MoveNext()) {
+                int number = (int)enumerator.Current;
+                Console.WriteLine(number);
+            }
+            
+            enumerator.Dispose(); // Dispose the enumerator when done
+        }
+    }
+
+    ```
+
+- try catch finaly
+
+
+    In C#, try, catch, and finally are keywords used for exception handling. Exception handling is a mechanism to gracefully handle runtime errors and exceptions that might occur during the execution of a program. Here's how these keywords work:
+
+    try: The try block encloses the code that might throw an exception. You place the potentially risky code within this block.
+
+    catch: The catch block is used to handle exceptions that are thrown within the corresponding try block. If an exception occurs in the try block, the runtime looks for a suitable catch block to handle the exception based on the type of exception thrown.
+
+    finally: The finally block is used to specify code that should be executed regardless of whether an exception occurred or not. This block is optional.
+
+    Here's a basic example of how try, catch, and finally are used in C#:
+
+
+    ```cs
+
+    using System;
+
+    class Program {
+        static void Main(string[] args) {
+            try {
+                int numerator = 10;
+                int denominator = 0;
+                int result = numerator / denominator; // This will cause an exception
+                Console.WriteLine("Result: " + result);
+            }
+            catch (DivideByZeroException ex) {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            finally {
+                Console.WriteLine("This will always execute.");
+            }
+        }
+    }
+
+    ```
 
 
 
