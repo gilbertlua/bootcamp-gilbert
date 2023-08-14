@@ -1,0 +1,98 @@
+public abstract class BookDesc{
+	public abstract void BookDescription();
+}
+public class Book:BookDesc{
+	//atributs
+	private string _bookName;
+	private string _bookId;
+	private string _bookEdition;
+	
+	//method to set _bookName
+	public bool SetBookName(string bookName){
+		if(bookName is not null){
+			this._bookName = bookName;
+			return true;
+		}
+		return false;
+	}	
+	//method to set _bookId
+	public bool SetBookId(string bookId){
+		if(bookId is not null){
+			this._bookId = bookId;
+			return true;
+		}
+		return false;
+	}		
+	//method to set _bookEdition
+	public bool SetBookEdition(string bookEdition){
+		if(bookEdition is not null){
+			this._bookEdition = bookEdition;
+			return true;
+		}
+		return false;
+	}		
+	
+	//method to get book name
+	public string GetBookName(){
+		if(_bookName is not null){
+			return _bookName;
+		}
+		return null;
+	}
+	//method to get book id
+	public string GetBookId(){
+		if(_bookId is not null){
+			return _bookId;
+		}
+		return null;
+	}
+	//method to get book Edition
+	public string GetBookEdition(){
+		if(_bookEdition is not null){
+			return _bookEdition;
+		}
+		return null;
+	}	
+	
+	//implementation the abstraction
+	public override void BookDescription(){
+		Console.WriteLine("Implement the book description");
+	}
+}
+
+public class BookDigital:Book{
+	private string _bookLink;
+	private string _bookType;
+	
+	public bool SetBookLink(string link){
+		if(link is not null){
+			this._bookLink = link;
+			return true;
+		}
+		return false;
+	}
+	public bool SetBookType(string type){
+		if(type is not null){
+			this._bookType = type;
+			return true;
+		}
+		return false;
+	}
+	public override void BookDescription(){
+		Console.WriteLine("This future is can be accesed into internet as pdf or any");
+	}
+}
+
+public void Main(){
+	Book bookHarryPotter;
+	bookHarryPotter = new();
+	bookHarryPotter.SetBookName("HarryPotter");
+	bookHarryPotter.SetBookId("0001");
+	bookHarryPotter.SetBookEdition("3 Edition");
+	bookHarryPotter.BookDescription();//The output will be -> Implement the book description
+	
+	
+	BookDigital bookDigitalHp;
+	bookDigitalHp = new();
+	bookDigitalHp.BookDescription();
+}
