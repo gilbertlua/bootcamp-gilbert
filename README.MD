@@ -441,9 +441,48 @@ namespace AccessModifiersExample
                 intList.Add(1);
                 intList.RemoveAt(1);//it will remove value of index 1
             ```
-            and more tool see in this [link(https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0)]
+            and more tool see in this [link](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0)
 
 
+    - HashSet
+    
+        In C#, a HashSet is an unordered collection of unique elements. It is defined under the System.Collections.Generic namespace1. The HashSet class is based on the model of mathematical sets and provides high-performance set operations similar to accessing the keys of the Dictionary<TKey,TValue> or Hashtable collections1.
+
+        ```csharp
+
+                    // Create a HashSet of integers.
+            HashSet<int> evenNumbers = new HashSet<int>();
+
+            // Add some even numbers to the set.
+            evenNumbers.Add(0);
+            evenNumbers.Add(2);
+            evenNumbers.Add(4);
+            evenNumbers.Add(6);
+            evenNumbers.Add(8);
+
+            // Create another HashSet of integers.
+            HashSet<int> oddNumbers = new HashSet<int>();
+
+            // Add some odd numbers to the set.
+            oddNumbers.Add(1);
+            oddNumbers.Add(3);
+            oddNumbers.Add(5);
+            oddNumbers.Add(7);
+            oddNumbers.Add(9);
+
+            // Merge the two sets.
+            evenNumbers.UnionWith(oddNumbers);
+
+            // Display the contents of the merged set.
+            foreach (int number in evenNumbers)
+            {
+                Console.Write(number + " ");
+            }
+
+        ```
+
+        class diagram it can make using 
+        `mermaid live`
 
 
 

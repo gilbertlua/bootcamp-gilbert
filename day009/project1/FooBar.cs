@@ -46,14 +46,6 @@ class FooBar{
 		
 		if(stringOut is not null){
 			modelStrings.Insert(numParameter,stringOut);
-		}
-		
-	}
-	public  void CheckModuls(){
-		int i=0;
-		foreach(string x in modelStrings){			
-			Console.WriteLine(i+": "+x);
-			i++;
-		}
+		}	
 	}
 }
