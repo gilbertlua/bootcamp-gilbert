@@ -413,5 +413,38 @@ namespace AccessModifiersExample
 
 
 
+### DAY 11 8/14/2023
+
+- Collection 
+    - Array
+        
+        - array is fixed size, and can't include value out of the index size
+        - to solve it can be using ArrayList
+
+            `ArrayList list = new();`
+    - List
+        - accesible using index
+        - dynamic size
+        - type safety
+
+            to add
+            ```csharp
+                List<int> intList = new();
+                intList.Add(1);
+                intList.Add(2);
+            ```
+
+            to remove by index
+
+            ```csharp
+                List<int> intList = new();
+                intList.Add(1);
+                intList.RemoveAt(1);//it will remove value of index 1
+            ```
+            and more tool see in this [link(https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-7.0)]
+
+
+
+
 
  
