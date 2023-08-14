@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = project1
+<<<<<<< Updated upstream
 build_property.ProjectDir = C:\Users\Formulatrix\Documents\bootcamp\day9\project1\
+=======
+build_property.ProjectDir = D:\gilbert folder\day9\project1\
+>>>>>>> Stashed changes
