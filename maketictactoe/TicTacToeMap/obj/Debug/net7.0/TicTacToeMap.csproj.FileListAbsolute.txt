@@ -1,0 +1,12 @@
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\bin\Debug\net7.0\TicTacToeMap.deps.json
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\bin\Debug\net7.0\TicTacToeMap.dll
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\bin\Debug\net7.0\TicTacToeMap.pdb
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\TicTacToeMap.csproj.AssemblyReference.cache
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\TicTacToeMap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\TicTacToeMap.AssemblyInfoInputs.cache
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\TicTacToeMap.AssemblyInfo.cs
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\TicTacToeMap.csproj.CoreCompileInputs.cache
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\TicTacToeMap.dll
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\refint\TicTacToeMap.dll
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\TicTacToeMap.pdb
+C:\Users\Formulatrix\Documents\bootcamp\maketictactoe\TicTacToeMap\obj\Debug\net7.0\ref\TicTacToeMap.dll

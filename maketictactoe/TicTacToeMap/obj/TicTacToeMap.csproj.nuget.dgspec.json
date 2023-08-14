@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\day9\\project1\\project1.csproj": {}
+    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\TicTacToeMap\\TicTacToeMap.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\day9\\project1\\project1.csproj": {
+    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\TicTacToeMap\\TicTacToeMap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\day9\\project1\\project1.csproj",
-        "projectName": "project1",
-        "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\day9\\project1\\project1.csproj",
+        "projectUniqueName": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\TicTacToeMap\\TicTacToeMap.csproj",
+        "projectName": "TicTacToeMap",
+        "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\TicTacToeMap\\TicTacToeMap.csproj",
         "packagesPath": "C:\\Users\\Formulatrix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\day9\\project1\\obj\\",
+        "outputPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\TicTacToeMap\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Formulatrix\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "TicTacToeMap/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/TicTacToeMap.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TicTacToeMap.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "TicTacToeMap/1.0.0": {
+      "type": "project",
+      "path": "../TicTacToeMap/TicTacToeMap.csproj",
+      "msbuildProject": "../TicTacToeMap/TicTacToeMap.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "TicTacToeMap >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Formulatrix\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\day9\\project1\\project1.csproj",
-      "projectName": "project1",
-      "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\day9\\project1\\project1.csproj",
+      "projectUniqueName": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\Tester\\Tester.csproj",
+      "projectName": "Tester",
+      "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\Tester\\Tester.csproj",
       "packagesPath": "C:\\Users\\Formulatrix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\day9\\project1\\obj\\",
+      "outputPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\Tester\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Formulatrix\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\TicTacToeMap\\TicTacToeMap.csproj": {
+              "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\maketictactoe\\TicTacToeMap\\TicTacToeMap.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
