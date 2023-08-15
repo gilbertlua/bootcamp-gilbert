@@ -1,7 +1,11 @@
 ﻿using FooBarLibrary;
 class Program{
 	static void Main(){
-		Testing();
+		FooBar newFooBar = new FooBar();
+		newFooBar.AddRules(1,"foo");
+		newFooBar.AddRules(2,"bar");
+		
+		// Console.WriteLine(newFooBar._dict(1));
 	}
 	
 	public static void Testing()

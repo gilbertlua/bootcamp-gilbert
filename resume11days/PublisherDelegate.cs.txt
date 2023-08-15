@@ -1,0 +1,38 @@
+public delegate void SendMessage(string message);
+
+class Publisher{
+	public SendMessage send;
+	public void SendNotification(){
+		Console.WriteLine("Hello Everyone");
+		MyEvent("Today is beatyful");
+	}
+	public void MyEvent(string message){
+		send.Invoke(message);
+	}
+
+}
+
+class Subscriber1{
+	public void GetNotifications(string message){
+		Console.WriteLine($"Subscriber 1 get notification : {message}");
+	}
+}
+
+class Subscriber2{
+	public void GetNotifications(string message){
+		Console.WriteLine($"Subscriber 1 get notification : {message}");
+	}
+}	
+
+
+class Program{
+	static void Main(){
+		Publisher publisher = new();
+		Subscriber1 sub1 = new();
+		Subscriber1 sub2 = new();
+		publisher.send = sub1.GetNotifications; 
+		publisher.send += sub2.GetNotifications; 
+		
+		publisher.SendNotification();
+	}
+}

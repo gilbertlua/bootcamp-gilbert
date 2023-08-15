@@ -1,0 +1,73 @@
+public delegate void MyDelegate();
+public delegate int Operation(int x, int y);
+public delegate void TestDelegate(string message);
+
+class ViewTest{
+	public static void Eat(){
+		Console.WriteLine("Im eating now");
+	}
+	public static void Drink(){
+		Console.WriteLine("Im drinking now");
+	}
+	public static void RunTest(){
+		MyDelegate myDelegate1 = Eat;
+		MyDelegate myDelegate2 = Drink;
+		MyDelegate result = myDelegate1+myDelegate2;
+		result();
+	}
+}
+class Book{
+	public TestDelegate runDelegate;
+	
+	public void RunDelegate(){
+		OnMyEvent(" subscribe my channel");
+	}
+	public void OnMyEvent(string message){
+		runDelegate?.Invoke(message);
+	}
+}
+class Pencil{
+	public void UsePencil(string message){
+		Console.WriteLine($"You are the best{message}");
+	}
+}
+
+
+
+
+class Program{
+	static void Main()
+	{
+		MyDelegate newDelegate = new(Program.SayHello);
+		Operation newOperation = new(Program.Add);
+		newDelegate();
+		newOperation(4,5).Dump();
+		
+		
+		Book book = new();
+		Pencil pencil = new();
+		
+		book.runDelegate += pencil.UsePencil;
+		book.runDelegate += pencil.UsePencil;
+		
+		book.RunDelegate();
+		
+		ViewTest.RunTest();
+		
+		
+		
+		
+	}
+	static void SayHello(){
+		Console.WriteLine("say hello");
+	}
+	static void SayHi(){
+		Console.WriteLine("say hi");
+	}
+	static int Add(int x, int y){
+		return x*y;
+	}
+}
+
+
+// You can define other methods, fields, classes and namespaces here

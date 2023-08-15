@@ -2,11 +2,19 @@ using System.Collections.Generic;
 namespace FooBarLibrary;
 class FooBar{
 	private int _numParameter;
-	private string? _strOutput;
-	private  static string[] modelString = new string[10]; 
-	List<String> modelStrings = new List<String>();
+	private string? _strOutput; 
+	Dictionary<int,string>? _dict = new Dictionary<int, string>();
 	
 	
+	// Add rules
+
+	public bool AddRules(int key, string? output){
+		if(output is not null){
+			_dict?.TryAdd(key,output);
+			return true;
+		}
+		return false;
+	}
 	public void SetNumParameter(int value)
 	{
 		this._numParameter = value;
@@ -41,11 +49,5 @@ class FooBar{
 		{
 			return i.ToString();
 		}
-	}
-	public void AddModels(int numParameter,string? stringOut){
-		
-		if(stringOut is not null){
-			modelStrings.Insert(numParameter,stringOut);
-		}	
 	}
 }

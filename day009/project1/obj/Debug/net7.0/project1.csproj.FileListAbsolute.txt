@@ -46,3 +46,18 @@ D:\gilbert folder\day009\project1\obj\Debug\net7.0\refint\project1.dll
 D:\gilbert folder\day009\project1\obj\Debug\net7.0\project1.pdb
 D:\gilbert folder\day009\project1\obj\Debug\net7.0\project1.genruntimeconfig.cache
 D:\gilbert folder\day009\project1\obj\Debug\net7.0\ref\project1.dll
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\bin\Debug\net7.0\project1.exe
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\bin\Debug\net7.0\project1.deps.json
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\bin\Debug\net7.0\project1.runtimeconfig.json
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\bin\Debug\net7.0\project1.dll
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\bin\Debug\net7.0\project1.pdb
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\project1.csproj.AssemblyReference.cache
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\project1.AssemblyInfoInputs.cache
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\project1.AssemblyInfo.cs
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\project1.csproj.CoreCompileInputs.cache
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\project1.dll
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\refint\project1.dll
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\project1.pdb
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\project1.genruntimeconfig.cache
+C:\Users\Formulatrix\Documents\bootcamp\day009\project1\obj\Debug\net7.0\ref\project1.dll
