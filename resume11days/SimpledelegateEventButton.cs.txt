@@ -1,0 +1,23 @@
+public delegate void ButtonClick();
+public delegate void CheckBox();
+class Program{
+	static void Main(){
+		ButtonClick button;
+		CheckBox check;
+		
+		button = OnClick;
+		button();
+		
+		check = OnCheck;
+		check();
+		
+		static void OnClick(){
+			Console.WriteLine("button clicked");
+		}
+		static void OnCheck(){
+			Console.WriteLine("Check box checked");
+		}
+	}
+}
+
+

@@ -1,0 +1,23 @@
+public delegate void OnClick(object sender, EventArgs e);
+
+class Publisher{
+	public event OnClick onclick;
+	public string name = "Budi";
+	public void SendSomething(){
+		if(onclick != null){
+			onclick(this,EventArgs.Empty);
+		}
+	}
+}
+class Program{
+
+	static void Main(){
+		Publisher publisher = new() ;
+		publisher.onclick+=GetNotification;
+		publisher.SendSomething();
+	}
+	static void GetNotification(object sender, EventArgs e){
+		string name = ((Publisher)sender).name;
+		Console.WriteLine($"Get notification : {name}");
+	}
+}
