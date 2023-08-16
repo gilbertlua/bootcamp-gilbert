@@ -1,0 +1,51 @@
+classDiagram
+
+    class Iplayer{
+        <<interface>>
+        + string playerName
+        + string playerId
+    }
+    class  LocEffect{
+        Low=5
+        High=10      
+    }
+    class GameController{
+        - Player player[2]
+        - Card card[]
+        %% gunakan interface
+        %% add player
+        %% get player
+        %% + void StartGame()
+        %% + void EndGame()
+        %% lengkapi method
+        %% location effect cari format
+        %% cardinality and relation
+        %% dependancy in
+        %% posistion pake dictionary
+        %% lengkapi class2 yang masih kurang
+    }
+    class Player{
+        - string _playerName
+        - int _playerId
+        + string GetPlayerName()
+        + string GetPlayerId()
+        + bool SetPlayerName(string)
+        + bool SetPlayerId(int)
+    }
+    class Card{
+        - string _cardName
+        - int _cardPower
+        - int _cardEnergy
+        + string GetCardName()
+        + int GetCardPower()
+        + bool SetCardName(string)
+        + bool SetCardPower(int)
+        + bool SetCardEnergy(int)
+    }
+    class Location{
+        - string locName
+        + LocEffect LocEffect
+    }
+
+    %% time
+    %% positioning card
