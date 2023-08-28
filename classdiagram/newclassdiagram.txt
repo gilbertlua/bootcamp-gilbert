@@ -1,0 +1,29 @@
+classDiagram
+IPlayer <|-- MarvelPlayer:implementation
+PlayerStatus o-- MarvelPlayer:agregration
+	
+%% player settings
+class IPlayer{
+    <<interface>>
+    + name:string
+    + id:int
+}
+class PlayerStatus{
+    <<enum>>
+    Win,
+    Lose,
+    OnGoing
+}
+class MarvelPlayer{
+    + name:string
+    + id:int
+    - _playerStatus:PlayerStatus
+    - _cardList:Dictionary ~string~ ~int~
+    + bool SetPlayerStatus()
+    + bool AddCard()
+    + bool PopCard()
+}
+class GameController{
+    - List~MarvelPlayer~ _playerList
+
+}
