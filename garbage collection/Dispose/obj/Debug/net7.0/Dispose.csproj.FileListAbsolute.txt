@@ -1,0 +1,15 @@
+D:\gilbert folder\garbage collection\Dispose\bin\Debug\net7.0\Dispose.exe
+D:\gilbert folder\garbage collection\Dispose\bin\Debug\net7.0\Dispose.deps.json
+D:\gilbert folder\garbage collection\Dispose\bin\Debug\net7.0\Dispose.runtimeconfig.json
+D:\gilbert folder\garbage collection\Dispose\bin\Debug\net7.0\Dispose.dll
+D:\gilbert folder\garbage collection\Dispose\bin\Debug\net7.0\Dispose.pdb
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\Dispose.csproj.AssemblyReference.cache
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\Dispose.GeneratedMSBuildEditorConfig.editorconfig
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\Dispose.AssemblyInfoInputs.cache
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\Dispose.AssemblyInfo.cs
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\Dispose.csproj.CoreCompileInputs.cache
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\Dispose.dll
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\refint\Dispose.dll
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\Dispose.pdb
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\Dispose.genruntimeconfig.cache
+D:\gilbert folder\garbage collection\Dispose\obj\Debug\net7.0\ref\Dispose.dll
