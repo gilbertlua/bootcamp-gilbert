@@ -1,0 +1,15 @@
+D:\gilbert folder\debugger\bin\Debug\net7.0\debugger.exe
+d:\gilbert folder\debugger\bin\Debug\net7.0\debugger.deps.json
+d:\gilbert folder\debugger\bin\Debug\net7.0\debugger.runtimeconfig.json
+D:\gilbert folder\debugger\bin\Debug\net7.0\debugger.dll
+D:\gilbert folder\debugger\bin\Debug\net7.0\debugger.pdb
+D:\gilbert folder\debugger\obj\Debug\net7.0\debugger.csproj.AssemblyReference.cache
+D:\gilbert folder\debugger\obj\Debug\net7.0\debugger.GeneratedMSBuildEditorConfig.editorconfig
+D:\gilbert folder\debugger\obj\Debug\net7.0\debugger.AssemblyInfoInputs.cache
+D:\gilbert folder\debugger\obj\Debug\net7.0\debugger.AssemblyInfo.cs
+D:\gilbert folder\debugger\obj\Debug\net7.0\debugger.csproj.CoreCompileInputs.cache
+D:\gilbert folder\debugger\obj\Debug\net7.0\debugger.dll
+D:\gilbert folder\debugger\obj\Debug\net7.0\refint\debugger.dll
+D:\gilbert folder\debugger\obj\Debug\net7.0\debugger.pdb
+d:\gilbert folder\debugger\obj\Debug\net7.0\debugger.genruntimeconfig.cache
+d:\gilbert folder\debugger\obj\Debug\net7.0\ref\debugger.dll

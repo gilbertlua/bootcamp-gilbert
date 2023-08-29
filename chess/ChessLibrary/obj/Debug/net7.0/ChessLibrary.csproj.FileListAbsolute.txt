@@ -10,3 +10,15 @@ C:\Users\Formulatrix\Documents\bootcamp\chess\ChessLibrary\obj\Debug\net7.0\Ches
 C:\Users\Formulatrix\Documents\bootcamp\chess\ChessLibrary\obj\Debug\net7.0\refint\ChessLibrary.dll
 C:\Users\Formulatrix\Documents\bootcamp\chess\ChessLibrary\obj\Debug\net7.0\ChessLibrary.pdb
 C:\Users\Formulatrix\Documents\bootcamp\chess\ChessLibrary\obj\Debug\net7.0\ref\ChessLibrary.dll
+d:\gilbert folder\chess\ChessLibrary\bin\Debug\net7.0\ChessLibrary.deps.json
+d:\gilbert folder\chess\ChessLibrary\bin\Debug\net7.0\ChessLibrary.dll
+d:\gilbert folder\chess\ChessLibrary\bin\Debug\net7.0\ChessLibrary.pdb
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\ChessLibrary.csproj.AssemblyReference.cache
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\ChessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\ChessLibrary.AssemblyInfoInputs.cache
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\ChessLibrary.AssemblyInfo.cs
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\ChessLibrary.csproj.CoreCompileInputs.cache
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\ChessLibrary.dll
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\refint\ChessLibrary.dll
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\ChessLibrary.pdb
+d:\gilbert folder\chess\ChessLibrary\obj\Debug\net7.0\ref\ChessLibrary.dll
