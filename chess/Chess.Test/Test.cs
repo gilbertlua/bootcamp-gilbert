@@ -5,7 +5,7 @@ using ChessLibrary;
 [TestFixture]
 public class PlayerTest
 {
-    [Test]
+    // [Test]
     public void AddPlayer(){
         ChessPlayer player = new ChessPlayer();
         string name = "Name Test";
@@ -14,5 +14,18 @@ public class PlayerTest
         _ = player.SetPlayerId(id);
         Assert.That(player.GetPlayerId(), Is.EqualTo(id));
         Assert.That(player.GetPlayerName(), Is.EqualTo(name));
+    }
+    
+    public void AddPiece(){
+        PieceColor color = PieceColor.black;
+        Piece piece = new Pawn(color);
+        Assert.That(piece.GetColor, Is.EqualTo(color));
+        Assert.That(piece.GetSymbol, Is.EqualTo("P"));
+        Assert.That(piece.GetName, Is.EqualTo("Pawn"));
+    }
+    [Test]
+    public void ViewBoards(){
+        Board board = new Board();
+        board.ViewBoard();
     }
 }

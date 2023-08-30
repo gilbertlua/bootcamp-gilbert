@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "d:\\gilbert folder\\chess\\ChessLibrary\\ChessLibrary.csproj": {}
+    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj": {}
   },
   "projects": {
-    "d:\\gilbert folder\\chess\\ChessLibrary\\ChessLibrary.csproj": {
+    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\gilbert folder\\chess\\ChessLibrary\\ChessLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj",
         "projectName": "ChessLibrary",
-        "projectPath": "d:\\gilbert folder\\chess\\ChessLibrary\\ChessLibrary.csproj",
-        "packagesPath": "C:\\Users\\Batch 4\\.nuget\\packages\\",
-        "outputPath": "d:\\gilbert folder\\chess\\ChessLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj",
+        "packagesPath": "C:\\Users\\Formulatrix\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Batch 4\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Formulatrix\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
