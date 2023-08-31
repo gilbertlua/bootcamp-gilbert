@@ -10,10 +10,13 @@ namespace ChessLibrary{
                 return new Knight(color);
             }
             else if(name.Equals("Queen",StringComparison.OrdinalIgnoreCase)){
-                return new Pawn(color);
+                return new Queen(color);
             }
             else if(name.Equals("Rook",StringComparison.OrdinalIgnoreCase)){
                 return new Rook(color);
+            }
+            else if(name.Equals("Bishop",StringComparison.OrdinalIgnoreCase)){
+                return new Bishop(color);
             }
             return new Pawn(color);
         }
