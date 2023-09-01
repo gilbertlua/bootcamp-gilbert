@@ -68,10 +68,16 @@ public class PlayerTest
     // [Test]
     public void ValidMoveTest(){
         StringBuilder sb;
-        Board board= new Board();
+        Board board= Board.GetTheBoard();
+        
+        CreateInitPiece? ip = new CreateInitPiece();
+        board.SetPiece(ip.CreatePiece("Bishop",PieceColor.white),new Spot(4,7));
+        
         board.GenerateBoard();
         sb = board.GetBoard();
         Console.WriteLine(sb);
+        
+
 
         Spot start_spot = new Spot(7,2);
         Spot end_spot = new Spot(2,5);
@@ -90,7 +96,7 @@ public class PlayerTest
     [Test]
     public void ValidateSingleMove(){
         CreateInitPiece? ip = new CreateInitPiece();
-        Board board= new Board();
+        Board board= Board.GetTheBoard();
         StringBuilder sb = new StringBuilder();
 
 

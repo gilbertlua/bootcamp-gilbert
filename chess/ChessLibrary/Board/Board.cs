@@ -21,8 +21,8 @@ namespace ChessLibrary{
                 {"Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn"},
                 {"Rook", "Knight", "Bishop", "Queen", "King", "Bishop", "Knight", "Rook"}
             };
-            InitBoard();
-            // SetNullAllBoard();
+            // InitBoard();
+            SetNullAllBoard();
         }
         public void InitializeBoard(){
             InitBoard();
@@ -125,7 +125,6 @@ namespace ChessLibrary{
                     _piecesHold[spot.Get_X(),spot.Get_Y()] = piece;
                 }
             }
-            
         }
 
         /// <summary>
