@@ -62,7 +62,20 @@ namespace ChessLibrary{
 		}
 
 		// is move valid
-		public virtual bool IsMovedValid(){
+		public virtual bool IsMovedValid(Move move){
+			Board board = Board.GetTheBoard();
+			if (board.IsOutOfRange(move)){
+				Console.WriteLine("IsOutOfRange");
+				return false;
+			}
+			if (board.IsSpotEmpty(move.GetStartSpot())){
+				Console.WriteLine("IsSpotEmpty" + board.IsSpotEmpty(move.GetStartSpot()));
+				return false;
+			}
+			if (move.GetStartSpot().Equals(move.GetEndSpot())){
+				Console.WriteLine("IsEquals");
+				return false;
+			}
 			return true;
 		}
 

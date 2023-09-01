@@ -23,12 +23,23 @@ namespace ChessLibrary{
             };
             // InitBoard();
         }
-
+        public void InitializeBoard(){
+            InitBoard();
+        }   
+        public static Board GetTheBoard(){
+            return _board;
+        }
         /// <summary>
         /// is used for intialize board of chess with configuration file
         /// </summary>
         private void InitBoard(){
             CreateInitPiece? ip = new CreateInitPiece();
+            for (int i = 0; i < _sizeHeight; i++){
+                for (int j = 0; j < _sizeWidth; j++){
+                    _piecesHold[i,j] = null!;
+                }
+            }            
+
             for(int i = 0; i < 2; i++){
                 for(int j = 0; j < 8; j++){
                     if(_configuration[i,j]!=null){
@@ -48,7 +59,7 @@ namespace ChessLibrary{
         /// <param name="move"></param>
         /// <exception cref="Exception"></exception>
         public void MovePiece(Move move){
-            if(IsOutOfRange(move)){
+            if(!IsOutOfRange(move)){
                 throw new Exception("out of range");
             }
             Piece tempPiece = GetPiece(move.GetStartSpot());
@@ -60,9 +71,12 @@ namespace ChessLibrary{
                 CapturePiece(move.GetEndSpot());
             }
             SetPiece(tempPiece,move.GetEndSpot());
-            ResetTile(move.GetEndSpot());
+            ResetTile(move.GetStartSpot());
         }
-
+        /// <summary>
+        /// is use to reset tile
+        /// </summary>
+        /// <param name="spot"></param>
         public void ResetTile(Spot spot){
             if(_piecesHold[spot.Get_X(),spot.Get_Y()] is not null){
                 _piecesHold[spot.Get_X(),spot.Get_Y()] = null!;
@@ -84,7 +98,8 @@ namespace ChessLibrary{
         /// <param name="spot"></param>
         /// <returns></returns>
         public bool IsSpotEmpty(Spot spot){
-            return _piecesHold[spot.Get_X(),spot.Get_Y()] == null;
+            bool check = _piecesHold[spot.Get_X(),spot.Get_Y()] == null;
+            return check;
         }
         /// <summary>
         /// is used for add piece for the position
@@ -110,7 +125,7 @@ namespace ChessLibrary{
         public bool IsOutOfRange(Move move){
             bool check = IsOutOfRange(move.GetStartSpot().Get_X(), move.GetStartSpot().Get_Y())
                         || IsOutOfRange(move.GetEndSpot().Get_X(), move.GetEndSpot().Get_Y());
-            return true;
+            return check;
         }
 
         /// <summary>
@@ -130,20 +145,15 @@ namespace ChessLibrary{
         /// </summary>
         public void GenerateBoard(){
             for(int j=0 ;j<_sizeWidth ; j++){
-                // Console.Write("\t"+(char)(j+'a')+ " ");
-                _chess_board.Append("\t"+(char)(j+'a')+ " ");
+                _chess_board.Append("\t"+(j)+ " ");
             }
             _chess_board.Append("\n\n");
-            // Console.WriteLine();
             for(int i=0; i<_sizeHeight; i++){
-                // Console.Write(8-i);
-                _chess_board.Append(8-i);
+                _chess_board.Append(i);
                 for(int j=0; j<_sizeWidth;j++){
-                    // Console.Write("\t" + GetPieceSymbol(new Spot(i,j))+ " ");
                     _chess_board.Append("\t" + GetPieceSymbol(new Spot(i,j))+ " ");
                 }
                 _chess_board.Append("\n");
-                // Console.Write("\n");
             }
         }       
         public StringBuilder GetBoard(){
@@ -175,10 +185,10 @@ namespace ChessLibrary{
         /// </summary>
         /// <param name="spot"></param>
         /// <returns></returns>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="IndexOutOfRangeException"></exception>
         public Piece GetPiece(Spot spot){
             if(IsOutOfRange(spot.Get_X(),spot.Get_Y())){
-                throw new ArgumentOutOfRangeException();
+                throw new IndexOutOfRangeException();
             }
             return _piecesHold[spot.Get_X(),spot.Get_Y()];    
         }   

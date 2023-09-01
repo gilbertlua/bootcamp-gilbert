@@ -7,7 +7,7 @@ namespace ChessLibrary{
         }
 
         // override
-        public override bool IsMovedValid(){
+        public override bool IsMovedValid(Move move){
             return true;
         }
     }    
