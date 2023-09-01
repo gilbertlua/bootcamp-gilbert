@@ -73,13 +73,15 @@ public class PlayerTest
         sb = board.GetBoard();
         Console.WriteLine(sb);
 
-        Spot start_spot = new Spot(0,6);
+        Spot start_spot = new Spot(7,2);
         Spot end_spot = new Spot(2,5);
         Move move = new Move(start_spot,end_spot);
 
         Piece piece = board.GetPiece(start_spot);
-        Console.WriteLine("Piece name\t: "+piece.GetName());
-        Console.WriteLine("Piece color\t: "+piece.GetColor());
+        board.IsSpotEmpty(start_spot);
+        Console.WriteLine(piece.GetName());
+        // Console.WriteLine("Piece name\t: "+piece.GetName());
+        // Console.WriteLine("Piece color\t: "+piece.GetColor());
 
         Console.WriteLine("is valid ? :"+ piece.IsMovedValid(move));
         // 
@@ -88,21 +90,23 @@ public class PlayerTest
     [Test]
     public void ValidateSingleMove(){
         CreateInitPiece? ip = new CreateInitPiece();
-        StringBuilder sb;
         Board board= new Board();
+        StringBuilder sb = new StringBuilder();
 
-        Spot start_spot = new Spot(5,5);
-        Spot end_spot = new Spot(4,4);
-        board.SetPiece(ip.CreatePiece("Bishop",PieceColor.white),start_spot);
-        Move move = new Move(start_spot,end_spot);
 
+        board.SetPiece(ip.CreatePiece("Bishop",PieceColor.white),new Spot(7,7));
+        Spot spot = new Spot(7,7);
+        Move move = new Move(spot, new Spot(6,6));
+        
+        
+        Piece piece = board.GetPiece(new Spot(7,7));
         board.GenerateBoard();
         sb = board.GetBoard();
         Console.WriteLine(sb);
 
-        Piece piece = board.GetPiece(start_spot);
-        Console.WriteLine("is valid to move? :"+ piece.IsMovedValid(move));
-        Console.WriteLine(piece.GetName());
+        piece.IsMovedValid(move);
+        // board.IsSpotEmpty(move.GetStartSpot());
+
 
     }
 }

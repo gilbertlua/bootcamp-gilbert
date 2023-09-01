@@ -21,7 +21,8 @@ namespace ChessLibrary{
                 {"Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn", "Pawn"},
                 {"Rook", "Knight", "Bishop", "Queen", "King", "Bishop", "Knight", "Rook"}
             };
-            // InitBoard();
+            InitBoard();
+            // SetNullAllBoard();
         }
         public void InitializeBoard(){
             InitBoard();
@@ -53,6 +54,14 @@ namespace ChessLibrary{
                 }
             }
         }    
+        
+        public void SetNullAllBoard(){
+            for (int i = 0; i < _sizeHeight; i++){
+                for (int j = 0; j < _sizeWidth; j++){
+                    _piecesHold[i,j] = null!;
+                }
+            }     
+        }
         /// <summary>
         /// is used for move piece
         /// </summary>
@@ -98,7 +107,8 @@ namespace ChessLibrary{
         /// <param name="spot"></param>
         /// <returns></returns>
         public bool IsSpotEmpty(Spot spot){
-            bool check = _piecesHold[spot.Get_X(),spot.Get_Y()] == null;
+            bool check = _piecesHold[spot.Get_X(),spot.Get_Y()] == null!;
+            Console.WriteLine("is spot empty check:"+ check);
             return check;
         }
         /// <summary>

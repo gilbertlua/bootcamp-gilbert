@@ -1,4 +1,5 @@
 using System.Drawing;
+using System.Text;
 
 namespace ChessLibrary{
 	public abstract class Piece:IPiece{
@@ -64,12 +65,18 @@ namespace ChessLibrary{
 		// is move valid
 		public virtual bool IsMovedValid(Move move){
 			Board board = Board.GetTheBoard();
+			board.GenerateBoard();
+			StringBuilder sb = board.GetBoard();
+			Console.WriteLine(sb);
+
+			
 			if (board.IsOutOfRange(move)){
 				Console.WriteLine("IsOutOfRange");
 				return false;
 			}
 			if (board.IsSpotEmpty(move.GetStartSpot())){
-				Console.WriteLine("IsSpotEmpty" + board.IsSpotEmpty(move.GetStartSpot()));
+				Console.WriteLine(move.GetStartSpot().Get_X()+" "+" "+move.GetStartSpot().Get_Y());
+				Console.WriteLine("IsSpotEmpty -> " + board.IsSpotEmpty(move.GetStartSpot()));
 				return false;
 			}
 			if (move.GetStartSpot().Equals(move.GetEndSpot())){
