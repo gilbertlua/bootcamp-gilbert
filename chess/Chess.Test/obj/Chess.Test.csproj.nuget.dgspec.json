@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj": {}
+    "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj": {
+    "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj",
+        "projectUniqueName": "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj",
         "projectName": "Chess.Test",
-        "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj",
+        "projectPath": "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj",
         "packagesPath": "C:\\Users\\Formulatrix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\obj\\",
+        "outputPath": "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Formulatrix\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj": {
-                "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj"
+              "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj": {
+                "projectPath": "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj": {
+    "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj",
+        "projectUniqueName": "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj",
         "projectName": "ChessLibrary",
-        "projectPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj",
+        "projectPath": "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\ChessLibrary.csproj",
         "packagesPath": "C:\\Users\\Formulatrix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\obj\\",
+        "outputPath": "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\ChessLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Formulatrix\\AppData\\Roaming\\NuGet\\NuGet.Config"

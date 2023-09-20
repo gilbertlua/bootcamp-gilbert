@@ -68,7 +68,6 @@ namespace ChessLibrary{
 			board.GenerateBoard();
 			StringBuilder sb = board.GetBoard();
 			Console.WriteLine(sb);
-
 			
 			if (board.IsOutOfRange(move)){
 				Console.WriteLine("IsOutOfRange");

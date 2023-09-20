@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XexqJH9ySmYtdFiID7x4qY9EgtpM0/UoCpX/M8KahGjz+3ekvmRI+GX/+S5KBTxiACiulg7LseDfgU/Me+QFkg==",
+  "dgSpecHash": "os4RqtU5yhqzOSiNbeI9xsP9fglKQ7kRUinGcNtIPOBnucyEOs0eMNEaUjgsmSNYhAvVifui1i+bwzW+HJ5d1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj",
+  "projectFilePath": "c:\\Users\\Formulatrix\\Documents\\bootcamp\\chess\\Chess.Test\\Chess.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Formulatrix\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\Formulatrix\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",

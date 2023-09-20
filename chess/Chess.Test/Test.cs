@@ -110,8 +110,8 @@ public class PlayerTest
         sb = board.GetBoard();
         Console.WriteLine(sb);
 
-        piece.IsMovedValid(move);
-        // board.IsSpotEmpty(move.GetStartSpot());
+        Console.WriteLine(piece.IsMovedValid(move));
+        board.IsSpotEmpty(move.GetStartSpot());
 
 
     }
